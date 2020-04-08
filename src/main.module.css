@@ -1,0 +1,168 @@
+html {
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+@viewport {
+    width: device-width ;
+    zoom: 1.0 ;
+}
+.main {
+    margin: 30px;
+    box-sizing: border-box;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.content{
+    background-color: rgb(34, 34, 34);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 1000px;
+}
+/*Rombo*/
+.rhombusParent {
+    height: 85;
+}
+@keyframes shrink-scrolling {
+    from {
+      transform: scale(1) translate(0,0);
+    }
+  
+    to {
+        transform: scale(0.6) translate(0,-70px);
+    }
+  }
+.nav{
+    width: 100%;
+    position: fixed;
+    height: 10px;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+    overflow: visible;
+}
+.navMenu{
+    height: 85;
+    display: flex;
+    flex-direction: column; 
+    z-index: 5;
+    align-items: center;
+    position: absolute;
+    width: 200px;
+    visibility: hidden;
+}
+.navMenu:first-child{
+    margin-top: 40px;
+}
+.menuItem{
+    color: darkslategrey; font-size: 2em;
+    padding: 4px 30px 4px 30px;
+    font-family: orator;
+    opacity: 0.8;
+    text-align: center;
+}
+.menuItem:hover{
+    background-color: cornflowerblue;
+    cursor: pointer;
+}
+.menuImage{
+    opacity: 0.7;
+    height: 85px;
+    background-size: cover;
+    image-rendering: crisp-edges;
+    animation-duration: 0.7s;
+    animation-name: shrink-scrolling;
+    animation-play-state: paused;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/*Spaceship*/
+
+.spaceshipSection{
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.spaceshipText{
+    color: rgb(228, 228, 228);
+    font-size: 1em;
+    font-family: orator;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.spaceshipTitle{
+    color: white;
+    font-size: 1.2em;
+    font-family: orator;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.spaceshipArchImg {
+    width: 658px;
+    height: 254px;
+}
+.spaceshipScreenshot {
+    margin-left: 10px;
+    width: 384px;
+    height: 206px;
+    border: 2px solid white;
+    border-radius: 12px;
+}
+.logosection {
+    width: 100%;
+    text-align: left;
+}
+.downloadLink1 {
+    width: 100%;
+    margin-left: 130px;
+    margin-bottom: 20px;
+}
+.logoText{
+    color: rgb(73, 91, 255);
+    font-size: 1em;
+    font-family: orator;
+    text-align: left;
+}
+.logoText:hover {
+    color: rgb(0, 8, 78);
+}
+.spaceshiplogo {
+    width: 50px;
+    height: 50px;
+    margin: 13px;
+}
+.downloadLogo {
+    width: 35px;
+    height: 35px;
+    margin: 13px;
+    cursor: pointer;
+}
+.screenshotFloat {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    margin: 20px 0 20px 0;
+}
+.listColumn {
+    width: 50%;
+}
+.underline {
+    text-decoration: underline;
+}

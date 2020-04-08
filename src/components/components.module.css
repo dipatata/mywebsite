@@ -1,0 +1,107 @@
+.section{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding-top: 4%;
+}
+.s1{
+    background-color: rgba(42, 63, 252, 0.788);
+}
+.s2{
+    background-color: rgba(103, 139, 216, 0.788);
+}
+.s3{
+    background-color: rgba(1, 15, 138, 0.788);
+}
+.s4{
+    background-color: rgba(20, 29, 117, 0.788);
+}
+.s5{
+    background-color: rgba(21, 13, 65, 0.788);
+}
+.s6{
+    background-color: rgba(32, 32, 54, 0.788);
+}
+.s7{
+    background-color: rgba(120, 120, 240, 0.788);
+}
+.hoverSection:hover {
+    background-color: rgba(10, 15, 56, 0.788);
+}
+.linkSquareSudoku{
+    width: 67px;
+    height: 84px;
+    position: relative;
+}
+.titleSection{
+    color: white;
+    font-size: 1.2em;
+    margin: 5% 0 7% 0;
+    font-family: orator;
+    text-align: center;
+}
+.descriptionSection{
+    color: rgb(228, 228, 228);
+    font-size: 1em;
+    margin: 0 10px 0 10px;
+    font-family: orator;
+    text-align: center;
+}
+.black {
+    color: rgb(60, 60, 60)
+}
+.mediumSizeFont{
+    color: azure; font-size: 1em;
+    margin: 10%;
+    font-family: orator;
+}
+@font-face {
+    font-family: corbel;
+    src: url(../assets/font/corbel/CORBEL.TTF);
+  }
+@font-face {
+    font-family: orator;
+    src: url(../assets/font/OratorStd.otf);
+}
+@font-face {
+    font-family: consolas;
+    src: url(../assets/font/consola.ttf);
+}
+.iconImage{
+    position: relative;
+    z-index: 2;
+}
+  @media screen and (max-width: 400px) {
+    .section{
+        width: 290px;
+        height: 290px;
+    }
+  }
+.footer{
+    width: 100%;
+    background-color: rgba(42, 63, 252, 0.788);
+    height: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.footertext{
+    color: azure; font-size: 0.7em;
+    font-family: corbel;
+}
+
+.selected {
+    opacity: 0.07;
+}
+.unselected {
+    opacity: 1;
+}
+.noDecoration {
+    text-decoration: none;
+}
