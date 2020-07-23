@@ -1,23 +1,25 @@
 import React from 'react';
-import MainModule from './main.module.css';
-import SpaceshipSection from './components/SpaceshipSection';
-import Architecture from './assets/images/spaceship/spaceshipArch_trans.png';
-import SpaceshipLogo from './assets/images/Csharp_Logo.png';
-import Screenshot1 from './assets/images/spaceship/screenshot1.png';
-import Screenshot2 from './assets/images/spaceship/screenshot2.png';
-import Screenshot3 from './assets/images/spaceship/screenshot3.png';
-import Screenshot4 from './assets/images/spaceship/screenshot4.png';
-import Screenshot5 from './assets/images/spaceship/screenshot5.png';
-import Screenshot6 from './assets/images/spaceship/screenshot6.png';
-import ControllerSection from './components/ControllerSection.js';
-import DownloadLogo from './components/DownloadLogo'
+import MainModule from '../main.module.css';
+import SpaceshipSection from './SpaceshipSection';
+import Architecture from '../assets/images/spaceship/spaceshipArch_trans.png';
+import SpaceshipLogo from '../assets/images/Csharp_Logo.png';
+import Screenshot1 from '../assets/images/spaceship/screenshot1.png';
+import Screenshot2 from '../assets/images/spaceship/screenshot2.png';
+import Screenshot3 from '../assets/images/spaceship/screenshot3.png';
+import Screenshot4 from '../assets/images/spaceship/screenshot4.png';
+import Screenshot5 from '../assets/images/spaceship/screenshot5.png';
+import Screenshot6 from '../assets/images/spaceship/screenshot6.png';
+import ControllerSection from './ControllerSection.js.js';
+import DownloadLogo from './DownloadLogo'
+import Rhombus from '../components/Rhombus'
 
 const Spaceship = () => {
     return (
-        <div className={MainModule.main}>
-            <div className={MainModule.content}>
-                <div className={MainModule.logosection}>
-                    <img className={MainModule.spaceshiplogo} src={SpaceshipLogo} alt={"spaceshipLogo"} />
+        <div className={MainModule.Main + ' ' + MainModule.MainSpaceship}>
+            <Rhombus spaceship/>
+            <div className={MainModule.Content}>
+                <div className={MainModule.LogoSection}>
+                    <img className={MainModule.SpaceshipLogo} src={SpaceshipLogo} alt={"spaceshipLogo"} />
                 </div>
                 <SpaceshipSection titleSection='spaceship.section1.title' descriptionSection='spaceship.section1'/>
                 <SpaceshipSection titleSection='spaceship.section2.title' imgs={[Architecture]}/>

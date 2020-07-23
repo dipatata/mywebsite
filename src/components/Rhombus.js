@@ -8,6 +8,8 @@ export default class Rhombus extends Component {
     rhombusImageId="rhombusImage";
     rhombusImageParentId="rhombusParentId";
     menuId="navMenu";
+    animationFrames = 100;
+    sizeRhombusMultiplier=4.2;
     state = {
         vscroll : 0,
         onTop : true,
@@ -30,9 +32,21 @@ export default class Rhombus extends Component {
     }
 
     render() {
+        let menuImageClass;
+        if (this.props.spaceship) {
+            menuImageClass = MainModule.menuImage + ' ' + MainModule.menuImageSpaceship
+        } else {
+            menuImageClass = MainModule.menuImage
+        }
+        let homeItem;
+        if (this.props.home) {
+            homeItem = (<div className={MainModule.menuItem + ' ' + MainModule.underline}>
+                Home</div>);
+        }
         return (
             <div className={MainModule.nav}>
                 <div id={this.menuId} className={MainModule.navMenu}>
+                    {homeItem}
                     <div className={MainModule.menuItem}>cv</div>
                     <div className={MainModule.menuItem}>c#</div>
                     <div className={MainModule.menuItem}>blog</div>
@@ -41,7 +55,7 @@ export default class Rhombus extends Component {
                 </div>
                 <div id={this.rhombusImageParentId} className={MainModule.rhombusParent}>
                     <img id={this.rhombusImageId} src={this.getImageSrc()} alt={this.rhombusImageId}
-                    className={MainModule.menuImage} onClick={this.menuClick.bind(this)}/>
+                    className={menuImageClass} onClick={this.menuClick.bind(this)}/>
                 </div>
             </div>
         );
@@ -93,7 +107,7 @@ export default class Rhombus extends Component {
     animateRhombusParent() {
         let currentHeaderStatus = !this.state.headerStatus;
         this.setState({onProcess : true, headerStatus : !this.state.headerStatus});
-        let indexLimit = 150;
+        let indexLimit = this.animationFrames; //Frames totales de animacion. Menos es mas rapido
         if (currentHeaderStatus) {
             this.setState({burguerPresent : false});
             for (let index = 0; index < indexLimit; index++) {
@@ -112,7 +126,7 @@ export default class Rhombus extends Component {
 
     animationIteration(index, indexLimit) {
         let menu = document.getElementById(this.rhombusImageParentId);
-        let scale = 1 + (index * 5) / indexLimit;
+        let scale = 1 + (index * this.sizeRhombusMultiplier) / indexLimit;
         menu.style = 'transform: scale('+ scale + ');';
     }
 

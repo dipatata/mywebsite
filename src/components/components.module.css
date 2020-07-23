@@ -9,6 +9,12 @@
     cursor: pointer;
     padding-top: 4%;
 }
+@media screen and (max-width: 400px) {
+    .section{
+        width: 290px;
+        height: 290px;
+    }
+}
 .s1{
     background-color: rgba(42, 63, 252, 0.788);
 }
@@ -76,12 +82,7 @@
     position: relative;
     z-index: 2;
 }
-  @media screen and (max-width: 400px) {
-    .section{
-        width: 290px;
-        height: 290px;
-    }
-  }
+
 .footer{
     width: 100%;
     background-color: rgba(42, 63, 252, 0.788);
@@ -104,4 +105,45 @@
 }
 .noDecoration {
     text-decoration: none;
+}
+
+/**
+Language bar
+*/
+.LanguageBar {
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.LanguageContainer {
+    width: 80px;
+    display: flex;
+    padding: 5px;
+}
+.LanguageBox {
+    width: 50%;
+    cursor: pointer;
+    position: relative;
+    z-index: 5;
+}
+.LanguageBoxR {
+    width: 50%;
+    margin-left: 5px;
+    cursor: pointer;
+    position: relative;
+    z-index: 5;
+}
+.LanguageImgBox {
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width: 500px) {
+    .LanguageImgBox {
+        width: 20px;
+        height: 10px;
+    }
+}
+.Selected {
+    outline: 1px yellow solid;
 }
