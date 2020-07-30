@@ -37,6 +37,15 @@
     "spaceship.section8.item2.item4" : "C: Super desaceleration",
     "spaceship.section8.item2.item5" : "IDDQD: God mode",
     "spaceship.section9.title" : "La inteligencia de los enemigos",
-    "spaceship.section9" : "Los naves enemigas te perseguirán si estas en su radio de visibilidad, dentro de una distancia máxima, y por sobre el túnel de las torretas. Cuando te persigan te dispararán automáticamente. En caso de que no estés en su radio de visibilidad, irán en linea recta vagando por el espacio hasta que te cruces en su camino. Si logras dispararles y neutralizarlas, no te perseguirán ni dispararán, aunque esto es muy difícil. Casi imposible ya que se mueven muy rápido. Por otro lado las torretas son inmóviles, aunque mas abundantes en número. Puedes neutralizarlas mas fácil. Te dejarán de disparar, aunque encontrarás algunas que serán invencibles. Por último, el enemigo mas estático son las paredes y obstáculos bloqueando el camino. Debes esquivarlos ya que estos también te disminuirán energía."
+    "spaceship.section9" : "Los naves enemigas te perseguirán si estas en su radio de visibilidad, dentro de una distancia máxima, y por sobre el túnel de las torretas. Cuando te persigan te dispararán automáticamente. En caso de que no estés en su radio de visibilidad, irán en linea recta vagando por el espacio hasta que te cruces en su camino. Si logras dispararles y neutralizarlas, no te perseguirán ni dispararán, aunque esto es muy difícil. Casi imposible ya que se mueven muy rápido. Por otro lado las torretas son inmóviles, aunque mas abundantes en número. Puedes neutralizarlas mas fácil. Te dejarán de disparar, aunque encontrarás algunas que serán invencibles. Por último, el enemigo mas estático son las paredes y obstáculos bloqueando el camino. Debes esquivarlos ya que estos también te disminuirán energía.",
 
+    "workInProgress.title" : "Sección en construcción",
+
+    "layout.box1.description" : "Soy Alejandro Daniel Barreto y este es mi sitio web",
+    "layout.box2.description" : "A game developed in Angular",
+    "layout.box3.description" : "Domino developed in ReactJS",
+    "layout.box4.description" : "A blog with developing stuff",
+    "layout.box5.title" : "cv / contact me",
+    "layout.box6.description" : "A spaceship game made in c#",
+    "layout.box7.description" : "A project developed in java"
 }

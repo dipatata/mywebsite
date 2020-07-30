@@ -13,10 +13,10 @@ const LanguageBar = (props) => {
         <div className={ComponentsModule.LanguageBar} >
             <div className={ComponentsModule.LanguageContainer}>
                 <div className={ComponentsModule.LanguageBox} onClick={props.toggleEsp}>
-                    <img src={Esp} className={ComponentsModule.LanguageImgBox + ' ' + espSelected} />
+                    <img alt="esp" src={Esp} className={ComponentsModule.LanguageImgBox + ' ' + espSelected} />
                 </div>
                 <div className={ComponentsModule.LanguageBoxR} onClick={props.toggleEng}>
-                    <img src={Eng} className={ComponentsModule.LanguageImgBox + ' ' + engSelected} />
+                    <img alt="eng" src={Eng} className={ComponentsModule.LanguageImgBox + ' ' + engSelected} />
                 </div>
             </div>
         </div>

@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import BoxModule from './components.module.css';
+import {withNamespaces} from 'react-i18next';
 
-export default class Box extends Component {
+class Box extends Component {
 
     state = {
         selected : false
@@ -14,18 +15,25 @@ export default class Box extends Component {
     render() {
         let selected = this.state.selected? BoxModule.selected : BoxModule.unselected;
         let img = this.state.selected? this.props.imgSelected : this.props.img;
+        let invisibleDescription = this.props.description? '' :
+            (<div className={BoxModule.descriptionSection + ' ' + BoxModule.Invisible}>
+                an invisible line
+            </div>);
         if (typeof(this.props.title) !== 'undefined' && typeof(this.props.img) !== 'undefined') {
             return (
                 <section className={BoxModule.section + ' ' + this.getColor(this.props.colorId) + 
                     ' ' + BoxModule.hoverSection} 
                     onMouseEnter={this.mouseEnterHandler.bind(this)}
                     onMouseLeave={this.mouseOutHandler.bind(this)}>
-                    <img className={BoxModule.iconImage} src={img} style={this.props.imgStyle}
-                        alt={this.props.title}/>
+                    <div className={BoxModule.ImgContainer}>
+                        <img className={BoxModule.iconImage} src={img} style={this.props.imgStyle}
+                            alt={this.props.title}/>
+                    </div>
                     <div className={BoxModule.titleSection + ' ' + selected}> 
                             {this.props.title}</div>
                     <div className={BoxModule.descriptionSection + ' ' + selected}> 
                             {this.props.description}</div>
+                    {invisibleDescription}
                 </section>
             );
         } else if (typeof(this.props.title) !== 'undefined') {
@@ -38,6 +46,7 @@ export default class Box extends Component {
                         {this.props.title}</div>
                     <div className={BoxModule.descriptionSection + ' ' + selected}> 
                             {this.props.description}</div>
+                    {invisibleDescription}
                 </section>
                 );
         } else {
@@ -48,6 +57,7 @@ export default class Box extends Component {
                     onMouseLeave={this.mouseOutHandler.bind(this)}>
                     <div className={BoxModule.descriptionSection + ' ' + selected}> 
                             {this.props.description}</div>
+                    {invisibleDescription}
                 </section>
                 );
         }
@@ -79,3 +89,5 @@ export default class Box extends Component {
         }
     }
 }
+
+export default withNamespaces()(Box)

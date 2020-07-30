@@ -12,36 +12,37 @@ import Screenshot6 from '../assets/images/spaceship/screenshot6.png';
 import ControllerSection from './ControllerSection.js.js';
 import DownloadLogo from './DownloadLogo'
 import Rhombus from '../components/Rhombus'
+import { withNamespaces } from 'react-i18next';
 
-const Spaceship = () => {
+const Spaceship = ({ t }) => {
     return (
         <div className={MainModule.Main + ' ' + MainModule.MainSpaceship}>
-            <Rhombus spaceship/>
+            <Rhombus spaceship home/>
             <div className={MainModule.Content}>
                 <div className={MainModule.LogoSection}>
                     <img className={MainModule.SpaceshipLogo} src={SpaceshipLogo} alt={"spaceshipLogo"} />
                 </div>
-                <SpaceshipSection titleSection='spaceship.section1.title' descriptionSection='spaceship.section1'/>
-                <SpaceshipSection titleSection='spaceship.section2.title' imgs={[Architecture]}/>
-                <SpaceshipSection titleSection='spaceship.section3.title' descriptionSection='spaceship.section3' />
+                <SpaceshipSection titleSection={t('spaceship.section1.title')} descriptionSection={t('spaceship.section1')}/>
+                <SpaceshipSection titleSection={t('spaceship.section2.title')} imgs={[Architecture]}/>
+                <SpaceshipSection titleSection={t('spaceship.section3.title')} descriptionSection={t('spaceship.section3')} />
                 <SpaceshipSection smallImg imgs={[Screenshot1, Screenshot2]} />
-                <SpaceshipSection titleSection='spaceship.section4.title' descriptionSection='spaceship.section4' />
-                <SpaceshipSection titleSection='spaceship.section5.title' descriptionSection='spaceship.section5' />
+                <SpaceshipSection titleSection={t('spaceship.section4.title')} descriptionSection={t('spaceship.section4')} />
+                <SpaceshipSection titleSection={t('spaceship.section5.title')} descriptionSection={t('spaceship.section5')} />
                 <SpaceshipSection smallImg imgs={[Screenshot3]} />
-                <SpaceshipSection titleSection='spaceship.section6.title' descriptionSection='spaceship.section6'
-                    items={['spaceship.section6.item1', 'spaceship.section6.item2', 'spaceship.section6.item3', 
-                    'spaceship.section6.item4', 'spaceship.section6.item5', 'spaceship.section6.item6']} />
+                <SpaceshipSection titleSection={t('spaceship.section6.title')} descriptionSection={t('spaceship.section6')}
+                    items={[t('spaceship.section6.item1'), t('spaceship.section6.item2'), t('spaceship.section6.item3'), 
+                    t('spaceship.section6.item4'), t('spaceship.section6.item5'), t('spaceship.section6.item6')]} />
                 <SpaceshipSection smallImg imgs={[Screenshot4, Screenshot5]} />
-                <SpaceshipSection titleSection='spaceship.section7.title' descriptionSection='spaceship.section7' />
+                <SpaceshipSection titleSection={t('spaceship.section7.title')} descriptionSection={t('spaceship.section7')} />
                 <SpaceshipSection smallImg imgs={[Screenshot6]} />
-                <ControllerSection titleSection='spaceship.section8.title' 
-                    controllers = {[['spaceship.section8.item1', ['spaceship.section8.item1.item1', 'spaceship.section8.item1.item2', 'spaceship.section8.item1.item3', 'spaceship.section8.item1.item4', 'spaceship.section8.item1.item5', 'spaceship.section8.item1.item6', 'spaceship.section8.item1.item7', 'spaceship.section8.item1.item8', 'spaceship.section8.item1.item9', 'spaceship.section8.item1.item10']], 
-                    ['spaceship.section8.item2', ['spaceship.section8.item2.item1', 'spaceship.section8.item2.item2', 'spaceship.section8.item2.item3', 'spaceship.section8.item2.item4', 'spaceship.section8.item2.item5']]]} />
-                <SpaceshipSection titleSection='spaceship.section9.title' descriptionSection='spaceship.section9' />
+                <ControllerSection titleSection={t('spaceship.section8.title')}
+                    controllers = {[[t('spaceship.section8.item1'), [t('spaceship.section8.item1.item1'), t('spaceship.section8.item1.item2'), t('spaceship.section8.item1.item3'), t('spaceship.section8.item1.item4'), t('spaceship.section8.item1.item5'), t('spaceship.section8.item1.item6'), t('spaceship.section8.item1.item7'), t('spaceship.section8.item1.item8'), t('spaceship.section8.item1.item9'), t('spaceship.section8.item1.item10')]], 
+                    [t('spaceship.section8.item2'), [t('spaceship.section8.item2.item1'), t('spaceship.section8.item2.item2'), t('spaceship.section8.item2.item3'), t('spaceship.section8.item2.item4'), t('spaceship.section8.item2.item5')]]]} />
+                <SpaceshipSection titleSection={t('spaceship.section9.title')} descriptionSection={t('spaceship.section9')} />
                 <DownloadLogo />
             </div>
         </div>
     );
 }
 
-export default Spaceship
+export default withNamespaces()(Spaceship)

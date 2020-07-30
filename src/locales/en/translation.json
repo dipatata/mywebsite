@@ -1,3 +1,13 @@
 {
-    "spaceship.section1": "Welcome to React and react-i18next"
+    "spaceship.section1": "Welcome to React and react-i18next",
+
+    "workInProgress.title" : "Work in progress",
+
+    "layout.box1.description" : "I am Alejandro Daniel Barreto and this is my website",
+    "layout.box2.description" : "A game developed in Angular",
+    "layout.box3.description" : "Domino developed in ReactJS",
+    "layout.box4.description" : "A blog with developing stuff",
+    "layout.box5.title" : "cv / contact me",
+    "layout.box6.description" : "A spaceship game made in c#",
+    "layout.box7.description" : "A project developed in java"
 }

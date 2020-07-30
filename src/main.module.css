@@ -37,6 +37,7 @@ body{
     justify-content: center;
     flex-wrap: wrap;
     width: 80%;
+    border-radius: 12px;
 }
 @media screen and (max-width: 700px) {
     .Content{
@@ -135,6 +136,8 @@ body{
 .spaceshipArchImg {
     width: 658px;
     height: 254px;
+    border: white 2px solid;
+    border-radius: 15px;
 }
 @media screen and (max-width: 940px) {
     .spaceshipArchImg{

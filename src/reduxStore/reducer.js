@@ -17,7 +17,7 @@ const reducer = (state = initialState, action) => {
     } 
     if (action.type === actionTypes.TOGGLE_ESP ) {
         localStorage.setItem(localStorageVars.language, localStorageVars.esp);
-        i18n.changeLanguage('es')
+        i18n.changeLanguage('es');
         return {
             ...state,
             language : localStorageVars.esp

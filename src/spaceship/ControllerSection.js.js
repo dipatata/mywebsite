@@ -10,14 +10,14 @@ const SpaceshipSection = (props) => {
             <div className={MainModule.screenshotFloat}>
                 {props.controllers.map((elem) => {
                     return (
-                        <div className={MainModule.listColumn}>
+                        <div className={MainModule.listColumn} key={elem[0]}>
                             <div className={MainModule.spaceshipTitle + ' ' + MainModule.underline}>
                                 {i18next.t(elem[0])}
                             </div>
                             <ul>
                                 {elem[1].map((elem2) => {
                                     return (
-                                        <li className={MainModule.spaceshipText}>
+                                        <li key = {elem2} className={MainModule.spaceshipText}>
                                             {i18next.t(elem2)}
                                         </li>
                                     );
