@@ -1,0 +1,123 @@
+@import url(http://db.onlinewebfonts.com/c/554db1ae89696fec03fd5b95a1cebdee?family=EnduranceW01-Regular);
+
+:root {
+    --lateral-margins: 50px;
+    --header-color : rgb(54, 64, 70);
+  }
+.Main {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    font-family: EnduranceW01-Regular;
+}
+.Cv {
+    width: 1000px;
+}
+.Header {
+    width: 100%;
+    background-color: var(--header-color);
+    border-radius: 8px 8px 0px 0px;
+    padding-left: var(--lateral-margins);
+    padding-right: var(--lateral-margins);
+    display: flex;
+    flex-wrap: wrap;
+}
+.Body {
+    width: 100%;
+    background-color: white;
+    border-radius: 0px 0px 8px 8px;
+    padding-left: var(--lateral-margins);
+    padding-right: var(--lateral-margins);
+    color: var(--header-color);
+    display: flex;
+    font-size: 15px;
+    line-height: 23px;
+    flex-wrap: wrap;
+}
+.HeaderTitle {
+    margin-top: 30px;
+    font-size: 39px;
+    color: white;
+    width: 100%;
+}
+.Subtitle {
+    font-size: 25px;
+    color: white;
+    width: 100%;
+    margin-top: 10px;
+}
+.PersonalInfo {
+    font-size: 14px;
+    width: 700px;
+    height: 80px;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.PersonalData{
+    color: white;
+    width: 50%;
+    height: 50%;
+}
+.PersonalText {
+    margin-left: 15px;
+}
+.Presentation {
+    margin-top: 15px;
+}
+.Experience {
+    width: 100%;
+    margin-top: 30px;
+}
+.BodyTitle {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.BodySubtitle {
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+}
+.BodyTime {
+    font-size: 14px;
+    font-weight: bold;
+    width: 100%;
+}
+.BodyPlace {
+    font-size: 14px;
+    font-style: italic;
+    width: 100%;
+    margin-top: 10px;
+}
+.ExperienceItem{
+    display: flex;
+    width: 100%;
+    margin-top: 16px;
+}
+.ExperienceTime {
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.ExperienceBody {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.List {
+    list-style-position: inside;
+}
+.Invisible {
+    opacity: 0;
+}
+.SkillItem {
+    margin-top: 10px;
+    font-size: 14px;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.SkillDescription {
+    width: 100%;
+}

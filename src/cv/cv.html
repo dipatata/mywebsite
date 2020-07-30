@@ -1,0 +1,379 @@
+<html>
+    <head>
+        <style type="text/css">
+@import url(http://db.onlinewebfonts.com/c/554db1ae89696fec03fd5b95a1cebdee?family=EnduranceW01-Regular);
+
+:root {
+    --lateral-margins: 50px;
+    --header-color : rgb(54, 64, 70);
+  }
+.Main {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    font-family: EnduranceW01-Regular;
+}
+.Cv {
+    width: 1000px;
+}
+.Header {
+    width: 100%;
+    background-color: var(--header-color);
+    border-radius: 8px 8px 0px 0px;
+    padding-left: var(--lateral-margins);
+    padding-right: var(--lateral-margins);
+    display: flex;
+    flex-wrap: wrap;
+}
+.Body {
+    width: 100%;
+    background-color: white;
+    border-radius: 0px 0px 8px 8px;
+    padding-left: var(--lateral-margins);
+    padding-right: var(--lateral-margins);
+    color: var(--header-color);
+    display: flex;
+    font-size: 15px;
+    line-height: 23px;
+    flex-wrap: wrap;
+}
+.HeaderTitle {
+    margin-top: 30px;
+    font-size: 39px;
+    color: white;
+    width: 100%;
+}
+.Subtitle {
+    font-size: 25px;
+    color: white;
+    width: 100%;
+    margin-top: 10px;
+}
+.PersonalInfo {
+    font-size: 14px;
+    width: 700px;
+    height: 80px;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.PersonalData{
+    color: white;
+    width: 50%;
+    height: 50%;
+}
+.PersonalText {
+    margin-left: 15px;
+}
+.Presentation {
+    margin-top: 15px;
+}
+.Experience {
+    width: 100%;
+    margin-top: 30px;
+}
+.BodyTitle {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.BodySubtitle {
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+}
+.BodyTime {
+    font-size: 14px;
+    font-weight: bold;
+    width: 100%;
+}
+.BodyPlace {
+    font-size: 14px;
+    font-style: italic;
+    width: 100%;
+    margin-top: 10px;
+}
+.ExperienceItem{
+    display: flex;
+    width: 100%;
+    margin-top: 16px;
+}
+.ExperienceTime {
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.ExperienceBody {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.List {
+    list-style-position: inside;
+}
+.Invisible {
+    opacity: 0;
+}
+.SkillItem {
+    margin-top: 10px;
+    font-size: 14px;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.SkillDescription {
+    width: 100%;
+}
+        </style>
+    </head>
+    <body>
+        <div class="Main">
+            <div class="Cv">
+                <div class="Header">
+                    <div class="HeaderTitle">Alejandro Daniel Barreto</div>
+                    <div class="Subtitle">Desarrollador de software</div>
+                    <div class="PersonalInfo">
+                        <div class="PersonalData"><b>Sitio web</b><span class="PersonalText">www.alejandrobarreto.com.ar</span></div>
+                        <div class="PersonalData"><b>Linkedin</b><span class="PersonalText">linkedin.com/in/aledbarreto</span></div>
+                        <div class="PersonalData"><b>Correo</b><span class="PersonalText">aledbarreto@gmail.com</span></div>
+                    </div>
+                </div>
+                <div class="Body">
+                    <span class="Presentation">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                    sunt in culpa qui officia
+                    </span>
+                    <div class="Experience">
+                        <div class="BodyTitle">Experiencia</div>
+                        <hr></hr>
+                        <div class="ExperienceItem">
+                            <div class="ExperienceTime">
+                                <span class="BodyTime">2017-03 - 2018-09</span>
+                            </div>
+                            <div class="ExperienceBody">
+                                <span class="BodySubtitle">Senior Software Developer</span>
+                                <span class="BodyPlace">Sovanta SRL, Buenos Aires</span>
+                                <span>
+                                    <ul class="List">
+                                        <li>Desarrollo de aplicaciones Java EE</li>
+                                        <li>Tecnologías utilizadas: Hibernate, Spring, Vaadin, Mockito, Maven</li>
+                                        <li>Soporte a producción</li>
+                                        <li>Equipo organizado con la metodología Scrum</li>
+                                        <li>Git como controlador de versiones</li>
+                                    </ul>
+                                </span>
+                            </div>                        
+                        </div>
+                        <div class="ExperienceItem">
+                            <div class="ExperienceTime">
+                                <span class="BodyTime">2015-11 - 2017-03</span>
+                            </div>
+                            <div class="ExperienceBody">
+                                <span class="BodySubtitle">Analista funcional</span>
+                                <span class="BodyPlace">Telecom Argentina S.A., Buenos Aires</span>
+                                <span>
+                                    <ul class="List">
+                                        <li>Análisis de producto para la implementación de diversas soluciones software</li>
+                                        <li>Creación y mantenimiento de documentación</li>
+                                        <li>Soporte a producción</li>
+                                        <li>Soporte a QA</li>
+                                    </ul>
+                                </span>
+                            </div>                        
+                        </div>
+                        <div class="ExperienceItem">
+                            <div class="ExperienceTime">
+                                <span class="BodyTime">2011-06 - 2015-10</span>
+                            </div>
+                            <div class="ExperienceBody">
+                                <span class="BodySubtitle">Team Lead - Desarrollador</span>
+                                <span class="BodyPlace">Telecom Argentina S.A., Buenos Aires</span>
+                                <span>
+                                    <ul class="List">
+                                        <li>Análisis de requerimientos de usuario</li>
+                                        <li>Capacitación, coordinación, y supervisión de equipo</li>
+                                        <li>Desarrollo de aplicaciones Java EE</li>
+                                        <li>Soporte a QA</li>
+                                        <li>Soporte a producción 24x7 tanto para software como para infraestructura</li>
+                                        <li>Tecnologías utilizadas: Java EE, Apache Struts, Grails, Hibernate</li>
+                                        <li>Plataformas utlizadas: Oracle Weblogic Server 9.x, Unix</li>
+                                        <li>Tecnologías complementarias: IBM MQ Series, JMS, Scripts en python</li>
+                                        <li>Base de datos: Oracle 11G</li>
+                                        <li>Confección de reportes de negocio en SQL y PLSQL</li>
+                                    </ul>
+                                </span>
+                            </div>                        
+                        </div>
+                        <div class="ExperienceItem">
+                            <div class="ExperienceTime">
+                                <span class="BodyTime">2008-10 - 2011-06</span>
+                            </div>
+                            <div class="ExperienceBody">
+                                <span class="BodySubtitle">Desarrollador Java</span>
+                                <span class="BodyPlace">Cúbika S.A. (ahora Globallogic)</span>
+                                <span>
+                                    <ul class="List">
+                                        <li>Desarrollo de aplicaciones Java EE</li>
+                                        <li>Desarrollo de scripts PLSQL</li>
+                                        <li>Soporte a QA</li>
+                                        <li>Soporte a producción</li>
+                                    </ul>
+                                </span>
+                            </div>                        
+                        </div>
+                        <div class="ExperienceItem">
+                            <div class="ExperienceTime">
+                                <span class="BodyTime">2006-12 - 2008-09</span>
+                            </div>
+                            <div class="ExperienceBody">
+                                <span class="BodySubtitle">Tester QA</span>
+                                <span class="BodyPlace">IBM Argentina S.A.</span>
+                                <span>
+                                    <ul class="List">
+                                        <li>Generación de casos de uso</li>
+                                        <li>Testing de aplicaciones Java</li>
+                                    </ul>
+                                </span>
+                            </div>                        
+                        </div>
+                    </div>
+                    <div class="Experience">
+                        <div class="BodyTitle">Educación</div>
+                        <hr class="Line" />
+                        <div class="ExperienceItem">
+                            <div class="ExperienceTime">
+                                <span class="BodyTime">2013-07 - presente</span>
+                            </div>
+                            <div class="ExperienceBody">
+                                <span class="BodySubtitle">Ingeniero en sistemas de información</span>
+                                <span class="BodyPlace">Universidad Tecnológica Nacional, Facultad Regional Buenos Aires</span>
+                                <span>
+                                    <ul class="List">
+                                        <li>35 materias aprobadas</li>
+                                        <li>5 materias para graduarme</li>
+                                    </ul>
+                                </span>
+                            </div>                        
+                        </div>
+                        <div class="ExperienceItem">
+                            <div class="ExperienceTime">
+                                <span class="BodyTime">2000 - 2005</span>
+                            </div>
+                            <div class="ExperienceBody">
+                                <span class="BodySubtitle">Técnico en informática personal y profesional</span>
+                                <span class="BodyPlace">Escuela nacional de educación técnica N°6 "Chacabuco". Morón, Buenos Aires</span>
+                            </div>                        
+                        </div>
+                    </div>
+                    <div class="Experience">
+                        <div class="BodyTitle">Tecnologías y herramientas</div>
+                        <hr class="Line" />
+                        <div class="ExperienceItem">
+                            <div class="ExperienceTime" ></div>
+                            <div class="ExperienceBody">
+                                <span class="SkillItem">
+                                    <b>Java</b>
+                                    <span class="SkillDescription">Spring, Hibernate, Mockito, Vaadin</span>
+                                </span>
+                                <span class="SkillItem">
+                                    <b>SQL, PLSQL</b>
+                                </span>
+                                <span class="SkillItem">
+                                    <span><b>Javascript</b></span>
+                                    <span class="SkillDescription">ReactJS, AngularJS, JQuery</span>
+                                </span>
+                                <span class="SkillItem">
+                                    <b>HTML, CSS, JSP</b>
+                                </span>
+                                <span class="SkillItem">
+                                    <b>Grails</b>
+                                </span>
+                                <span class="SkillItem">
+                                    <b>Git, Maven, Npm</b>
+                                </span>
+                                <span class="SkillItem">
+                                    <b>Mysql, Oracle, H2, Sap Hana, MongoDB</b>
+                                </span>
+                                <span class="SkillItem">
+                                    <b>Unity</b>
+                                </span>
+                                <span class="SkillItem">
+                                    <span><b>Conocimiento básico</b></span>
+                                    <span class="SkillDescription">C#,PHP, Python</span>
+                                </span>
+                                <span class="SkillItem">
+                                    <span><b>Otros software utilizados</b></span>
+                                    <span class="SkillDescription">JIRA, SoapUI, Postman</span>
+                                </span>
+                                <span class="SkillItem">
+                                    <span><b>IDE's utilizados</b></span>
+                                    <span class="SkillDescription">Eclipse, Visual Studio Code, IntelliJ IDEA</span>
+                                </span>
+                            </div>                        
+                        </div>
+                    </div>
+                    <div class="Experience">
+                        <div class="BodyTitle">Idiomas</div>
+                        <hr class="Line" />
+                        <div class="ExperienceItem">
+                            <div class="ExperienceTime">
+                            </div>
+                            <div class="ExperienceBody">
+                                <span class="BodySubtitle">Inglés</span>
+                                <span class="BodyPlace">Nivel fluido hablado y escrito</span>
+                            </div>                        
+                        </div>
+                        <div class="ExperienceItem">
+                            <div class="ExperienceTime">
+                            </div>
+                            <div class="ExperienceBody">
+                                <span class="BodySubtitle">Chino</span>
+                                <span class="BodyPlace">Nivel básico hablado y escrito</span>
+                            </div>                        
+                        </div>
+                    </div>
+                    <div class="Experience">
+                        <div class="BodyTitle">Cursos</div>
+                        <hr class="Line" />
+                        <div class="ExperienceItem">
+                            <div class="ExperienceTime">
+                            </div>
+                            <div class="ExperienceBody">
+                                <span class="BodySubtitle">React - The Complete Guide (incl Hooks, React Router, Redux)</span>
+                                <span class="BodyPlace">Maximilian Schwarzmüller, Udemy</span>
+                            </div>                        
+                        </div>
+                    </div>
+                    <div class="ExperienceItem">
+                        <div class="ExperienceTime">
+                        </div>
+                        <div class="ExperienceBody">
+                            <span class="BodySubtitle">Máster en Programación de Videojuegos con Unity 2020 y C#</span>
+                            <span class="BodyPlace">Mariano Rivas, Udemy</span>
+                        </div>                        
+                    </div>
+                    <div class="ExperienceItem">
+                        <div class="ExperienceTime">
+                        </div>
+                        <div class="ExperienceBody">
+                            <span class="BodySubtitle">Spring Framework 5: Creando webapp de cero a experto</span>
+                            <span class="BodyPlace">Andrés Guzmán F, Udemy</span>
+                        </div>                        
+                    </div>
+                    <div class="ExperienceItem">
+                        <div class="ExperienceTime">
+                        </div>
+                        <div class="ExperienceBody">
+                            <span class="BodySubtitle">Java Maven: Introducción paso a paso</span>
+                            <span class="BodyPlace">Dico Training</span>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
