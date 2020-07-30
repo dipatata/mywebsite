@@ -3,8 +3,16 @@ import { reactI18nextModule } from "react-i18next";
 
 import translationEN from './locales/en/translation.json';
 import translationES from './locales/es/translation.json';
+import localStorageVars from "./reduxStore/localStorageVars";
 
-// the translations
+const initializeLanguage = () => {
+  if (localStorage.getItem(localStorageVars.language) === localStorageVars.esp) {
+    return 'es'
+  } else {
+    return 'en'
+  }
+}
+
 const resources = {
   en: {
     translation: translationEN
@@ -15,13 +23,13 @@ const resources = {
 };
 
 i18n
-  .use(reactI18nextModule) // passes i18n down to react-i18next
+  .use(reactI18nextModule)
   .init({
     resources,
-    lng: "en",
-    keySeparator: false, // we do not use keys in form messages.welcome
+    lng: initializeLanguage(),
+    keySeparator: false,
     interpolation: {
-      escapeValue: false // react already safes from xss
+      escapeValue: false
     }
   });
 

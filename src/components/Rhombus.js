@@ -2,6 +2,8 @@ import React, {Component} from 'react'
 import RhombusBlue from '../assets/images/rhombusBlue.png'
 import RhombusBlueNoBrg from '../assets/images/rhombusBlueOLD.png';
 import MainModule from '../main.module.css';
+import AppLink from './AppLink';
+import routes from '../routes';
 
 export default class Rhombus extends Component {
 
@@ -40,8 +42,11 @@ export default class Rhombus extends Component {
         }
         let homeItem;
         if (this.props.home) {
-            homeItem = (<div className={MainModule.menuItem + ' ' + MainModule.underline}>
-                Home</div>);
+            homeItem = (
+                <AppLink linkTo={routes.homeR}>
+                    <div className={MainModule.menuItem + ' ' + MainModule.underline}>Home</div>
+                </AppLink>
+            );
         }
         return (
             <div className={MainModule.nav}>

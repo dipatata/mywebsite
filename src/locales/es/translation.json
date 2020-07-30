@@ -42,10 +42,10 @@
     "workInProgress.title" : "Sección en construcción",
 
     "layout.box1.description" : "Soy Alejandro Daniel Barreto y este es mi sitio web",
-    "layout.box2.description" : "A game developed in Angular",
-    "layout.box3.description" : "Domino developed in ReactJS",
-    "layout.box4.description" : "A blog with developing stuff",
-    "layout.box5.title" : "cv / contact me",
-    "layout.box6.description" : "A spaceship game made in c#",
-    "layout.box7.description" : "A project developed in java"
+    "layout.box2.description" : "Un juego hecho con Angular",
+    "layout.box3.description" : "Domino desarrollado en ReactJS",
+    "layout.box4.description" : "Blog acerca de temas de programación",
+    "layout.box5.title" : "cv / contactarme",
+    "layout.box6.description" : "Un juego de naves hecho en c#",
+    "layout.box7.description" : "Un proyecto desarrollado en java"
 }

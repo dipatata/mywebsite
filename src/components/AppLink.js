@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
+import propTypes from 'prop-types';
 
 const style = {
     textDecoration : 'none'
@@ -20,5 +21,10 @@ const AppLink = (props) => {
         );  
     }
 } 
+
+AppLink.propTypes = {
+    linkInterno : propTypes.bool,
+    linkTo : propTypes.string
+}
 
 export default AppLink;

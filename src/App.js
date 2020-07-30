@@ -5,15 +5,24 @@ import Spaceship from './spaceship/Spaceship';
 import WorkInprogress from './workInProgress';
 import Cv from './cv/cv';
 import { withNamespaces } from 'react-i18next';
+import LCH from './hoc/LanguageChangerHOC'
+import Routes from './routes'
+
+const colours=[0,1,2,3,4,5,6].sort((a, b) => (Math.random() * 3) - 1);
 
 const App = ({t}) => {
+  const LayoutWithNameSpaces = withNamespaces()(LCH(Layout));
   return (
     <BrowserRouter>
       <Switch>  
-        <Route path='/spaceship' component={withNamespaces()(Spaceship)}/>
-        <Route path='/cv' component={withNamespaces()(Cv)}/>
-        <Route path='/java' component={withNamespaces()(WorkInprogress)}/>
-        <Route component={withNamespaces()(Layout)} />
+        <Route path={Routes.spaceshipR} component={withNamespaces()(LCH(Spaceship))}/>
+        <Route path={Routes.cvR} component={withNamespaces()(LCH(Cv))}/>
+        <Route path={Routes.javaR} component={withNamespaces()(LCH(WorkInprogress))}/>
+        <Route render={(props) => {
+          return (
+            <LayoutWithNameSpaces {...props} isAuthed={true} colours={colours}/>
+          )
+        }}/>
       </Switch>
     </BrowserRouter>
   );

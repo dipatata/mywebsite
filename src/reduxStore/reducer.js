@@ -3,7 +3,8 @@ import localStorageVars from './localStorageVars';
 import i18n from '../i18n';
 
 const initialState = {
-    language : localStorageVars.eng
+    language : localStorage.getItem(localStorageVars.language) === localStorageVars.esp? 
+        localStorageVars.esp : localStorageVars.eng
 }
 
 const reducer = (state = initialState, action) => {

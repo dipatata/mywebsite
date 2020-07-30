@@ -9,9 +9,9 @@ const Cv = (props) => {
                 <div className={Css.HeaderTitle}>Alejandro Daniel Barreto</div>
                 <div className={Css.Subtitle}>Desarrollador de software</div>
                 <div className={Css.PersonalInfo}>
-                    <div className={Css.PersonalData}><b>Sitio web</b><span class={Css.PersonalText}>www.alejandrobarreto.com.ar</span></div>
-                    <div className={Css.PersonalData}><b>Linkedin</b><span class={Css.PersonalText}>linkedin.com/in/aledbarreto</span></div>
-                    <div className={Css.PersonalData}><b>Correo</b><span class={Css.PersonalText}>aledbarreto@gmail.com</span></div>
+                    <div className={Css.PersonalData}><b>Sitio web</b><span className={Css.PersonalText}>www.alejandrobarreto.com.ar</span></div>
+                    <div className={Css.PersonalData}><b>Linkedin</b><span className={Css.PersonalText}>linkedin.com/in/aledbarreto</span></div>
+                    <div className={Css.PersonalData}><b>Correo</b><span className={Css.PersonalText}>aledbarreto@gmail.com</span></div>
                 </div>
             </div>
             <div className={Css.Body}>
