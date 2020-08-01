@@ -1,136 +1,128 @@
 import React from 'react';
 import Css from './cv.module.css'
 
-const Cv = (props) => {
+const Cv = ({t}) => {
     return  (
     <div className={Css.Main}>
         <div className={Css.Cv}>
             <div className={Css.Header}>
                 <div className={Css.HeaderTitle}>Alejandro Daniel Barreto</div>
-                <div className={Css.Subtitle}>Desarrollador de software</div>
+                <div className={Css.Subtitle}>{t("cv.header.subtitle")}</div>
                 <div className={Css.PersonalInfo}>
-                    <div className={Css.PersonalData}><b>Sitio web</b><span className={Css.PersonalText}>www.alejandrobarreto.com.ar</span></div>
+                    <div className={Css.PersonalData}><b>{t("cv.header.personalData.web")}</b><span className={Css.PersonalText}>www.alejandrobarreto.com.ar</span></div>
                     <div className={Css.PersonalData}><b>Linkedin</b><span className={Css.PersonalText}>linkedin.com/in/aledbarreto</span></div>
-                    <div className={Css.PersonalData}><b>Correo</b><span className={Css.PersonalText}>aledbarreto@gmail.com</span></div>
+                    <div className={Css.PersonalData}><b>{t("cv.header.personalData.email")}</b><span className={Css.PersonalText}>aledbarreto@gmail.com</span></div>
                 </div>
             </div>
             <div className={Css.Body}>
-                <span className={Css.Presentation}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-                sunt in culpa qui officia
-                </span>
                 <div className={Css.Experience}>
-                    <div className={Css.BodyTitle}>Experiencia</div>
+                    <div className={Css.BodyTitle}>{t("cv.body.experience.title")}</div>
                     <hr></hr>
                     <div className={Css.ExperienceItem}>
                         <div className={Css.ExperienceTime}>
-                            <span className={Css.BodyTime}>2017-03 - 2018-09</span>
+                            <span className={Css.BodyTime}>{t("cv.body.experienceItem1.bodyTime")}</span>
                         </div>
                         <div className={Css.ExperienceBody}>
                             <span className={Css.BodySubtitle}>Senior Software Developer</span>
                             <span className={Css.BodyPlace}>Sovanta SRL, Buenos Aires</span>
                             <span>
                                 <ul className={Css.List}>
-                                    <li>Desarrollo de aplicaciones Java EE</li>
-                                    <li>Tecnologías utilizadas: Hibernate, Spring, Vaadin, Mockito, Maven</li>
-                                    <li>Soporte a producción</li>
-                                    <li>Equipo organizado con la metodología Scrum</li>
-                                    <li>Git como controlador de versiones</li>
+                                    <li>{t("cv.body.experienceItem1.item1")}</li>
+                                    <li>{t("cv.body.experienceItem1.item2")} : Hibernate, Spring, Vaadin, Mockito, Maven</li>
+                                    <li>{t("cv.body.experienceItem1.item3")}</li>
+                                    <li>{t("cv.body.experienceItem1.item4")}</li>
+                                    <li>{t("cv.body.experienceItem1.item5")}</li>
                                 </ul>
                             </span>
                         </div>                        
                     </div>
                     <div className={Css.ExperienceItem}>
                         <div className={Css.ExperienceTime}>
-                            <span className={Css.BodyTime}>2015-11 - 2017-03</span>
+                            <span className={Css.BodyTime}>{t("cv.body.experienceItem2.bodyTime")}</span>
                         </div>
                         <div className={Css.ExperienceBody}>
-                            <span className={Css.BodySubtitle}>Analista funcional</span>
+                            <span className={Css.BodySubtitle}>{t("cv.body.experienceItem2.title")}</span>
                             <span className={Css.BodyPlace}>Telecom Argentina S.A., Buenos Aires</span>
                             <span>
                                 <ul className={Css.List}>
-                                    <li>Análisis de producto para la implementación de diversas soluciones software</li>
-                                    <li>Creación y mantenimiento de documentación</li>
-                                    <li>Soporte a producción</li>
-                                    <li>Soporte a QA</li>
+                                    <li>{t("cv.body.experienceItem2.item1")}</li>
+                                    <li>{t("cv.body.experienceItem2.item2")}</li>
+                                    <li>{t("cv.body.experienceItem2.item3")}</li>
+                                    <li>{t("cv.body.experienceItem2.item4")}</li>
                                 </ul>
                             </span>
                         </div>                        
                     </div>
                     <div className={Css.ExperienceItem}>
                         <div className={Css.ExperienceTime}>
-                            <span className={Css.BodyTime}>2011-06 - 2015-10</span>
+                            <span className={Css.BodyTime}>{t("cv.body.experienceItem3.bodyTime")}</span>
                         </div>
                         <div className={Css.ExperienceBody}>
-                            <span className={Css.BodySubtitle}>Team Lead - Desarrollador</span>
+                            <span className={Css.BodySubtitle}>{t("cv.body.experienceItem3.title")}</span>
                             <span className={Css.BodyPlace}>Telecom Argentina S.A., Buenos Aires</span>
                             <span>
                                 <ul className={Css.List}>
-                                    <li>Análisis de requerimientos de usuario</li>
-                                    <li>Capacitación, coordinación, y supervisión de equipo</li>
-                                    <li>Desarrollo de aplicaciones Java EE</li>
-                                    <li>Soporte a QA</li>
-                                    <li>Soporte a producción 24x7 tanto para software como para infraestructura</li>
-                                    <li>Tecnologías utilizadas: Java EE, Apache Struts, Grails, Hibernate</li>
-                                    <li>Plataformas utlizadas: Oracle Weblogic Server 9.x, Unix</li>
-                                    <li>Tecnologías complementarias: IBM MQ Series, JMS, Scripts en python</li>
-                                    <li>Base de datos: Oracle 11G</li>
-                                    <li>Confección de reportes de negocio en SQL y PLSQL</li>
+                                    <li>{t("cv.body.experienceItem3.item1")}</li>
+                                    <li>{t("cv.body.experienceItem3.item2")}</li>
+                                    <li>{t("cv.body.experienceItem3.item3")}</li>
+                                    <li>{t("cv.body.experienceItem3.item4")}</li>
+                                    <li>{t("cv.body.experienceItem3.item5")}</li>
+                                    <li>{t("cv.body.experienceItem3.item6")}</li>
+                                    <li>{t("cv.body.experienceItem3.item7")}</li>
+                                    <li>{t("cv.body.experienceItem3.item8")}</li>
+                                    <li>{t("cv.body.experienceItem3.item9")}</li>
+                                    <li>{t("cv.body.experienceItem3.item10")}</li>
                                 </ul>
                             </span>
                         </div>                        
                     </div>
                     <div className={Css.ExperienceItem}>
                         <div className={Css.ExperienceTime}>
-                            <span className={Css.BodyTime}>2008-10 - 2011-06</span>
+                            <span className={Css.BodyTime}>{t("cv.body.experienceItem4.bodyTime")}</span>
                         </div>
                         <div className={Css.ExperienceBody}>
-                            <span className={Css.BodySubtitle}>Desarrollador Java</span>
-                            <span className={Css.BodyPlace}>Cúbika S.A. (ahora Globallogic)</span>
+                            <span className={Css.BodySubtitle}>{t("cv.body.experienceItem4.title")}</span>
+                            <span className={Css.BodyPlace}>{t("cv.body.experienceItem4.place")}</span>
                             <span>
                                 <ul className={Css.List}>
-                                    <li>Desarrollo de aplicaciones Java EE</li>
-                                    <li>Desarrollo de scripts PLSQL</li>
-                                    <li>Soporte a QA</li>
-                                    <li>Soporte a producción</li>
+                                    <li>{t("cv.body.experienceItem4.item1")}</li>
+                                    <li>{t("cv.body.experienceItem4.item2")}</li>
+                                    <li>{t("cv.body.experienceItem4.item3")}</li>
+                                    <li>{t("cv.body.experienceItem4.item4")}</li>
                                 </ul>
                             </span>
                         </div>                        
                     </div>
                     <div className={Css.ExperienceItem}>
                         <div className={Css.ExperienceTime}>
-                            <span className={Css.BodyTime}>2006-12 - 2008-09</span>
+                            <span className={Css.BodyTime}>{t("cv.body.experienceItem5.bodyTime")}</span>
                         </div>
                         <div className={Css.ExperienceBody}>
-                            <span className={Css.BodySubtitle}>Tester QA</span>
+                            <span className={Css.BodySubtitle}>{t("cv.body.experienceItem5.title")}</span>
                             <span className={Css.BodyPlace}>IBM Argentina S.A.</span>
                             <span>
                                 <ul className={Css.List}>
-                                    <li>Generación de casos de uso</li>
-                                    <li>Testing de aplicaciones Java</li>
+                                    <li>{t("cv.body.experienceItem5.item1")}</li>
+                                    <li>{t("cv.body.experienceItem5.item2")}</li>
                                 </ul>
                             </span>
                         </div>                        
                     </div>
                 </div>
                 <div className={Css.Experience}>
-                    <div className={Css.BodyTitle}>Educación</div>
+                    <div className={Css.BodyTitle}>{t("cv.body.educacion")}</div>
                     <hr className={Css.Line} />
                     <div className={Css.ExperienceItem}>
                         <div className={Css.ExperienceTime}>
-                            <span className={Css.BodyTime}>2013-07 - presente</span>
+                            <span className={Css.BodyTime}>{t("cv.body.educacion.bodyTime")}</span>
                         </div>
                         <div className={Css.ExperienceBody}>
-                            <span className={Css.BodySubtitle}>Ingeniero en sistemas de información</span>
-                            <span className={Css.BodyPlace}>Universidad Tecnológica Nacional, Facultad Regional Buenos Aires</span>
+                            <span className={Css.BodySubtitle}>{t("cv.body.educacion.title")}</span>
+                            <span className={Css.BodyPlace}>{t("cv.body.educacion.university")}</span>
                             <span>
                                 <ul className={Css.List}>
-                                    <li>35 materias aprobadas</li>
-                                    <li>5 materias para graduarme</li>
+                                    <li>{t("cv.body.educacion.approvedSubjects")}</li>
+                                    <li>{t("cv.body.educacion.remainingSubjects")}</li>
                                 </ul>
                             </span>
                         </div>                        
@@ -140,13 +132,13 @@ const Cv = (props) => {
                             <span className={Css.BodyTime}>2000 - 2005</span>
                         </div>
                         <div className={Css.ExperienceBody}>
-                            <span className={Css.BodySubtitle}>Técnico en informática personal y profesional</span>
-                            <span className={Css.BodyPlace}>Escuela nacional de educación técnica N°6 "Chacabuco". Morón, Buenos Aires</span>
+                            <span className={Css.BodySubtitle}>{t("cv.body.educacion.school.title")}</span>
+                            <span className={Css.BodyPlace}>{t("cv.body.educacion.school.place")}</span>
                         </div>                        
                     </div>
                 </div>
                 <div className={Css.Experience}>
-                    <div className={Css.BodyTitle}>Tecnologías y herramientas</div>
+                    <div className={Css.BodyTitle}>{t("cv.body.tecnologies.title")}</div>
                     <hr className={Css.Line} />
                     <div className={Css.ExperienceItem}>
                         <div className={Css.ExperienceTime} />
@@ -178,42 +170,42 @@ const Cv = (props) => {
                                 <b>Unity</b>
                             </span>
                             <span className={Css.SkillItem}>
-                                <span><b>Conocimiento básico</b></span>
+                                <span><b>{t("cv.body.tecnologies.basic.title")}</b></span>
                                 <span className={Css.SkillDescription}>C#,PHP, Python</span>
                             </span>
                             <span className={Css.SkillItem}>
-                                <span><b>Otros software utilizados</b></span>
+                                <span><b>{t("cv.body.tecnologies.other.title")}</b></span>
                                 <span className={Css.SkillDescription}>JIRA, SoapUI, Postman</span>
                             </span>
                             <span className={Css.SkillItem}>
-                                <span><b>IDE's utilizados</b></span>
+                                <span><b>{t("cv.body.tecnologies.ides.title")}</b></span>
                                 <span className={Css.SkillDescription}>Eclipse, Visual Studio Code, IntelliJ IDEA</span>
                             </span>
                         </div>                        
                     </div>
                 </div>
                 <div className={Css.Experience}>
-                    <div className={Css.BodyTitle}>Idiomas</div>
+                    <div className={Css.BodyTitle}>{t("cv.body.languages.title")}</div>
                     <hr className={Css.Line} />
                     <div className={Css.ExperienceItem}>
                         <div className={Css.ExperienceTime}>
                         </div>
                         <div className={Css.ExperienceBody}>
-                            <span className={Css.BodySubtitle}>Inglés</span>
-                            <span className={Css.BodyPlace}>Nivel fluido hablado y escrito</span>
+                            <span className={Css.BodySubtitle}>{t("cv.body.languages.eng.title")}</span>
+                            <span className={Css.BodyPlace}>{t("cv.body.languages.eng.level")}</span>
                         </div>                        
                     </div>
                     <div className={Css.ExperienceItem}>
                         <div className={Css.ExperienceTime}>
                         </div>
                         <div className={Css.ExperienceBody}>
-                            <span className={Css.BodySubtitle}>Chino</span>
-                            <span className={Css.BodyPlace}>Nivel básico hablado y escrito</span>
+                            <span className={Css.BodySubtitle}>{t("cv.body.languages.chinese.title")}</span>
+                            <span className={Css.BodyPlace}>{t("cv.body.languages.chinese.level")}</span>
                         </div>                        
                     </div>
                 </div>
                 <div className={Css.Experience}>
-                    <div className={Css.BodyTitle}>Cursos</div>
+                    <div className={Css.BodyTitle}>{t("cv.body.courses.title")}</div>
                     <hr className={Css.Line} />
                     <div className={Css.ExperienceItem}>
                         <div className={Css.ExperienceTime}>
@@ -246,6 +238,7 @@ const Cv = (props) => {
                     <div className={Css.ExperienceBody}>
                         <span className={Css.BodySubtitle}>Java Maven: Introducción paso a paso</span>
                         <span className={Css.BodyPlace}>Dico Training</span>
+                        <br /><br /><br />
                     </div>                        
                 </div>
             </div>
