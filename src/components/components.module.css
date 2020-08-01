@@ -48,14 +48,14 @@
     position: relative;
 }
 .titleSection{
-    color: white;
+    color: black;
     font-size: 1.2em;
     margin: 5% 0 7% 0;
     font-family: orator;
     text-align: center;
 }
 .descriptionSection{
-    color: rgb(228, 228, 228);
+    color: black;
     font-size: 1em;
     margin: 0 10px 0 10px;
     font-family: orator;
@@ -159,5 +159,5 @@ Language bar
     }
 }
 .Selected {
-    outline: 1px yellow solid;
+    outline: 2px black solid;
 }

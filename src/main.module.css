@@ -7,14 +7,14 @@ html {
     box-sizing: border-box;
 }
 body{
-    background-color: black;
+    background-color: white;
 }
 @viewport {
     width: device-width ;
     zoom: 1.0 ;
 }
 .Website {
-    
+    background-color: white;
 }
 .Main {
     margin: 0px 30px 30px 30px;
@@ -22,6 +22,36 @@ body{
     display: flex;
     justify-content: center;
     position: relative;
+}
+.Header {
+    width: 100%;
+    margin: 20px;
+    border: white 4px solid;
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.NameDiv {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+.Name {
+    font-family: orator;
+    color: black;
+    margin: 0px 25px 25px 25px;
+    font-size: 23px;
+}
+.CopeteDiv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 25px 40px 25px;
+}
+.Copete {
+    font-family: orator;
+    color: black;
 }
 .MainSpaceship {
     margin-top: 15px;
@@ -32,7 +62,8 @@ body{
     }
 }
 .Content{
-    background-color: rgb(34, 34, 34);
+    /*background-color: rgb(34, 34, 34);*/
+    background-color: white;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -82,7 +113,7 @@ body{
     margin-top: 40px;
 }
 .menuItem{
-    color: darkslategrey; 
+    color: black; 
     font-size: 23px;
     padding: 4px 30px 4px 30px;
     font-family: orator;

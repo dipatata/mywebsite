@@ -28,9 +28,19 @@ import {withNamespaces} from 'react-i18next';
         <div className={MainModule.Main} >
           <Rhombus />
           <div className={MainModule.Content}>
-            <LanguageBar />
-            <Box colorId={colours[3]}
-              description={t("layout.box1.description")}/>
+          <LanguageBar />
+            <div className={MainModule.Header}>
+              <div className={MainModule.NameDiv}>
+                <div className={MainModule.Name}>
+                  Alejandro Daniel Barreto
+                </div>
+              </div>
+              <div className={MainModule.CopeteDiv}>
+                <div className={MainModule.Copete}>
+                Creative fullstack software developer and product analyst with 14 years of experience
+                </div>
+              </div>
+            </div>
             <AppLink linkTo="../angularSudoku">
               <Box img={AngularLogo} imgSelected={AngularLogoSelected} title='angular' imgStyle={sudokuImgStyle}
               colorId={colours[1]} description={t("layout.box2.description")} />
