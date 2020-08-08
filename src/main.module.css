@@ -92,13 +92,14 @@ body{
     height: 86;
 }
 @keyframes shrink-scrolling {
+
     from {
-      transform: scale(1) translate(0,0);
-    }
-  
-    to {
         transform: scale(0.6) translate(0,-70px);
     }
+
+    to {
+        transform: scale(1) translate(0,0);
+      }
   }
 .nav{
     width: 100%;

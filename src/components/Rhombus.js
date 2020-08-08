@@ -13,23 +13,18 @@ export default class Rhombus extends Component {
     animationFrames = 100;
     sizeRhombusMultiplier=4.2;
     state = {
-        vscroll : 0,
-        onTop : true,
+        //RunningRhombusShrink indica si la animacion de rhombo a triangulo o viceversa esta ejecutandose
         runningRhombusShrink : false,
+        //HeaderStatus indica si el rombo esta maximizado
         headerStatus : false,
         burguerPresent : true,
+        //On process indica si la animacion del rombo a rombo maximizado esta ejecutandose
         onProcess : false
     }
     componentDidMount() {
-        window.onscroll=this.scrollHandler.bind(this);
         document.getElementById(this.rhombusImageId).addEventListener("animationiteration", 
             () => {
                 this.stopRhombusAnimate();
-                if (this.state.onTop && this.state.vscroll!==0 && !this.state.headerStatus) {
-                    this.rhombusAnimate(true);
-                } else if (!this.state.onTop && this.state.vscroll === 0 && !this.state.headerStatus) {
-                    this.rhombusAnimate(false);
-                }
         }, false);
     }
 
@@ -70,28 +65,10 @@ export default class Rhombus extends Component {
         return this.state.burguerPresent? RhombusBlue : RhombusBlueNoBrg;
     }
 
-    scrollHandler() {
-        this.setState({vscroll : window.scrollY});    
-        if (this.state.vscroll !== 0) {
-            if (this.state.onTop && !this.state.runningRhombusShrink) {
-                this.rhombusAnimate(true);
-            }
-        } else {
-            if (!this.state.onTop && !this.state.runningRhombusShrink) {
-                this.rhombusAnimate(false);
-            }
-        }
-    }
-
-    rhombusAnimate(smaller) {
+    rhombusAnimate() {
         if (this.state.headerStatus) return;
-        if (smaller) {
-            document.getElementById(this.rhombusImageId).style.animationPlayState = "running";
-            this.setState({onTop : false, runningRhombusShrink : true});
-        } else {
-            document.getElementById(this.rhombusImageId).style.animationPlayState = "running";
-            this.setState({onTop : true, runningRhombusShrink : true});
-        }
+        document.getElementById(this.rhombusImageId).style.animationPlayState = "running";
+        this.setState({runningRhombusShrink : true});
     }
 
     stopRhombusAnimate() {
@@ -101,8 +78,8 @@ export default class Rhombus extends Component {
 
     menuClick() {
         if (this.state.onProcess || this.state.runningRhombusShrink) return;
-        if (!this.state.headerStatus && !this.state.onTop) {
-            this.rhombusAnimate(false);
+        if (!this.state.headerStatus) {
+            this.rhombusAnimate();
             setTimeout(this.animateRhombusParent.bind(this), 600);
         } else {
             this.animateRhombusParent();
@@ -142,7 +119,7 @@ export default class Rhombus extends Component {
 
     stopAnimation2() {
         this.setState({onProcess : false, burguerPresent : true});
-        this.scrollHandler();
+        this.rhombusAnimate();
     }
 
     putAwayMenu() {
