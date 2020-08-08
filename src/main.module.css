@@ -29,6 +29,7 @@ body{
     border: white 4px solid;
     border-radius: 25px;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 .NameDiv {
@@ -40,25 +41,35 @@ body{
     font-family: orator;
     color: black;
     margin: 0px 25px 25px 25px;
-    font-size: 23px;
+    font-size: 26px;
 }
 .CopeteDiv {
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 100px 25px 40px 25px;
+    margin: 100px 25px 170px 25px;
 }
 .Copete {
     font-family: orator;
     color: black;
+    font-size: 20px;
 }
 .MainSpaceship {
     margin-top: 15px;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
     .Main{
-        margin: 5px;
+        margin: 0px;
+    }
+    .CopeteDiv {
+        margin: 50px 25px 90px 25px;
+    }
+    .Copete {
+        font-size: 8px;
+    }
+    .Name {
+        font-size: 14px;
     }
 }
 .Content{
@@ -70,6 +81,7 @@ body{
     width: 80%;
     border-radius: 12px;
 }
+
 @media screen and (max-width: 700px) {
     .Content{
         width: 100%;
@@ -125,7 +137,7 @@ body{
     cursor: pointer;
 }
 .menuImage{
-    opacity: 0.7;
+    opacity: 0.85;
     height: 85px;
     background-size: cover;
     image-rendering: crisp-edges;
@@ -146,22 +158,51 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top: 70px;
 }
+.spaceshipSection:first-of-type {
+    margin-top: 20px;
+}
+.SpaceshipContent {
+    background-color: rgb(34, 34, 34);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    border-radius: 12px;
+}
+@media screen and (max-width: 700px) {
+    .SpaceshipContent {
+        width: 100%;
+    }
+    .spaceshipSection {
+        width: 88%;
+        margin-top: 40px;
 
+    }
+}
 .spaceshipText{
     color: rgb(228, 228, 228);
     font-size: 16px;
     font-family: orator;
     text-align: left;
-    margin-bottom: 20px;
 }
 
 .spaceshipTitle{
+    margin-bottom: 40px;
     color: white;
     font-size: 19px;
     font-family: orator;
     text-align: center;
-    margin-bottom: 20px;
+}
+@media screen and (max-width: 700px) {
+    .spaceshipText{
+        font-size: 11px;
+    }
+    .spaceshipTitle {
+        font-size: 14px;
+        margin-bottom: 14px;
+    }
 }
 
 .spaceshipArchImg {
@@ -184,10 +225,12 @@ body{
 }
 .spaceshipScreenshot {
     margin-left: 10px;
+    margin-top: 10px;
     width: 384px;
     height: 206px;
     border: 2px solid white;
     border-radius: 12px;
+    cursor: pointer;
 }
 @media screen and (max-width: 580px) {
     .spaceshipScreenshot{
@@ -200,16 +243,34 @@ body{
     width: 100%;
     text-align: left;
 }
-.downloadLink1 {
-    width: 100%;
-    margin-left: 130px;
-    margin-bottom: 20px;
+.DownloadFrame {
+    width: 50%;
+    margin : 20px 0px 20px 130px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+.DownloadGroup {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    flex-wrap: nowrap;
+    width: 250px;
+    margin-right: 10px;
 }
 .logoText{
-    color: rgb(73, 91, 255);
+    color: rgb(135, 147, 252);
     font-size: 1em;
     font-family: orator;
     text-align: left;
+    cursor: pointer;
+}
+.DownloadLogo {
+    width: 35px;
+    height: 35px;
+    margin: 13px;
+    cursor: pointer;
 }
 .logoText:hover {
     color: rgb(0, 8, 78);
@@ -219,24 +280,29 @@ body{
     height: 50px;
     margin: 13px;
 }
-.downloadLogo {
-    width: 35px;
-    height: 35px;
-    margin: 13px;
-    cursor: pointer;
-}
 .screenshotFloat {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
-    margin: 20px 0 20px 0;
 }
 .listColumn {
     width: 50%;
 }
+@media screen and (max-width: 700px) {
+    .listColumn{
+        width: 100%;
+        margin-bottom: 20px;
+        padding-left: 30px;
+    }
+}
 .underline {
     text-decoration: underline;
+}
+
+.NoLinkDecoration {
+    text-decoration: none;
+    color : unset;
 }
 
 /**

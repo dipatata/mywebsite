@@ -37,7 +37,7 @@ import {withNamespaces} from 'react-i18next';
               </div>
               <div className={MainModule.CopeteDiv}>
                 <div className={MainModule.Copete}>
-                Creative fullstack software developer and product analyst with 14 years of experience
+                {t("layout.elevator")}
                 </div>
               </div>
             </div>

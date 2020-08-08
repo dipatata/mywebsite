@@ -9,9 +9,27 @@ const Cv = ({t}) => {
                 <div className={Css.HeaderTitle}>Alejandro Daniel Barreto</div>
                 <div className={Css.Subtitle}>{t("cv.header.subtitle")}</div>
                 <div className={Css.PersonalInfo}>
-                    <div className={Css.PersonalData}><b>{t("cv.header.personalData.web")}</b><span className={Css.PersonalText}>www.alejandrobarreto.com.ar</span></div>
-                    <div className={Css.PersonalData}><b>Linkedin</b><span className={Css.PersonalText}>linkedin.com/in/aledbarreto</span></div>
-                    <div className={Css.PersonalData}><b>{t("cv.header.personalData.email")}</b><span className={Css.PersonalText}>aledbarreto@gmail.com</span></div>
+                    <div className={Css.PersonalData}>
+                        <b>{t("cv.header.personalData.web")}</b>
+                        <span className={Css.PersonalText}>
+                            <a className={Css.PersonalLink} href="http://www.alejandrobarreto.com.ar">
+                            www.alejandrobarreto.com.ar
+                            </a>
+                        </span>
+                    </div>
+                    <div className={Css.PersonalData}>
+                        <b>Linkedin</b>
+                        <span className={Css.PersonalText}>
+                            <a href="http://linkedin.com/in/aledbarreto" className={Css.PersonalLink}>
+                            linkedin.com/in/aledbarreto
+                            </a>
+                        </span>
+                    </div>
+                    <div className={Css.PersonalData}>
+                        <b>{t("cv.header.personalData.email")}</b>
+                        <span className={Css.PersonalText}>aledbarreto@gmail.com
+                        </span>
+                    </div>
                 </div>
             </div>
             <div className={Css.Body}>

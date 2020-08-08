@@ -25,9 +25,10 @@ const resources = {
 i18n
   .use(reactI18nextModule)
   .init({
+    keySeparator: '>',
+    nsSeparator: '|',
     resources,
     lng: initializeLanguage(),
-    keySeparator: false,
     interpolation: {
       escapeValue: false
     }

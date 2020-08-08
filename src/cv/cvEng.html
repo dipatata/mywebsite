@@ -11,7 +11,7 @@
     display: flex;
     justify-content: center;
     background-color: black;
-    font-family: EnduranceW01-Regular;
+    font-family: EnduranceW01-Regular, Cambria;
     margin-bottom: 20px;
 }
 .Cv {
@@ -65,6 +65,10 @@
 }
 .PersonalText {
     margin-left: 15px;
+}
+.PersonalLink {
+    text-decoration: none; 
+    color: white;
 }
 .Presentation {
     margin-top: 15px;
@@ -132,16 +136,28 @@
             <div class="Cv">
                 <div class="Header">
                     <div class="HeaderTitle">Alejandro Daniel Barreto</div>
-                    <div class="Subtitle">Desarrollador de software</div>
+                    <div class="Subtitle">Software developer</div>
                     <div class="PersonalInfo">
-                        <div class="PersonalData"><b>Sitio web</b><span class="PersonalText">www.alejandrobarreto.com.ar</span></div>
-                        <div class="PersonalData"><b>Linkedin</b><span class="PersonalText">linkedin.com/in/aledbarreto</span></div>
-                        <div class="PersonalData"><b>Correo</b><span class="PersonalText">aledbarreto@gmail.com</span></div>
+                        <div class="PersonalData"><b>Website</b>
+                            <span class="PersonalText">
+                                <a class="PersonalLink" href="http://www.alejandrobarreto.com.ar">
+                                www.alejandrobarreto.com.ar
+                                </a>
+                            </span>
+                        </div>
+                        <div class="PersonalData"><b>Linkedin</b>
+                            <span class="PersonalText">
+                                <a href="http://linkedin.com/in/aledbarreto" class="PersonalLink">
+                                linkedin.com/in/aledbarreto
+                                </a>
+                            </span>
+                        </div>
+                        <div class="PersonalData"><b>Email</b><span class="PersonalText">aledbarreto@gmail.com</span></div>
                     </div>
                 </div>
                 <div class="Body">
                     <div class="Experience">
-                        <div class="BodyTitle">Experiencia</div>
+                        <div class="BodyTitle">Experience</div>
                         <hr></hr>
                         <div class="ExperienceItem">
                             <div class="ExperienceTime">
@@ -152,11 +168,11 @@
                                 <span class="BodyPlace">Sovanta SRL, Buenos Aires</span>
                                 <span>
                                     <ul class="List">
-                                        <li>Desarrollo de aplicaciones Java EE</li>
-                                        <li>Tecnologías utilizadas: Hibernate, Spring, Vaadin, Mockito, Maven</li>
-                                        <li>Soporte a producción</li>
-                                        <li>Equipo organizado con la metodología Scrum</li>
-                                        <li>Git como controlador de versiones</li>
+                                        <li>Java EE Application Developer</li>
+                                        <li>Technologies utilized: Hibernate, Spring, Vaadin, Mockito, Maven</li>
+                                        <li>Production support</li>
+                                        <li>Team organized with Scrum methodology</li>
+                                        <li>Git as version control</li>
                                     </ul>
                                 </span>
                             </div>                        
@@ -166,14 +182,14 @@
                                 <span class="BodyTime">2015-11 - 2017-03</span>
                             </div>
                             <div class="ExperienceBody">
-                                <span class="BodySubtitle">Analista funcional</span>
+                                <span class="BodySubtitle">Product Analyst</span>
                                 <span class="BodyPlace">Telecom Argentina S.A., Buenos Aires</span>
                                 <span>
                                     <ul class="List">
-                                        <li>Análisis de producto para la implementación de diversas soluciones software</li>
-                                        <li>Creación y mantenimiento de documentación</li>
-                                        <li>Soporte a producción</li>
-                                        <li>Soporte a QA</li>
+                                        <li>Product analysis for the implementation of various software solutions</li>
+                                        <li>Documentation creation and maintenance</li>
+                                        <li>Production support</li>
+                                        <li>QA support</li>
                                     </ul>
                                 </span>
                             </div>                        
@@ -183,20 +199,20 @@
                                 <span class="BodyTime">2011-06 - 2015-10</span>
                             </div>
                             <div class="ExperienceBody">
-                                <span class="BodySubtitle">Team Lead - Desarrollador</span>
+                                <span class="BodySubtitle">Team Lead - Developer</span>
                                 <span class="BodyPlace">Telecom Argentina S.A., Buenos Aires</span>
                                 <span>
                                     <ul class="List">
-                                        <li>Análisis de requerimientos de usuario</li>
-                                        <li>Capacitación, coordinación, y supervisión de equipo</li>
-                                        <li>Desarrollo de aplicaciones Java EE</li>
-                                        <li>Soporte a QA</li>
-                                        <li>Soporte a producción 24x7 tanto para software como para infraestructura</li>
-                                        <li>Tecnologías utilizadas: Java EE, Apache Struts, Grails, Hibernate</li>
-                                        <li>Plataformas utlizadas: Oracle Weblogic Server 9.x, Unix</li>
-                                        <li>Tecnologías complementarias: IBM MQ Series, JMS, Scripts en python</li>
-                                        <li>Base de datos: Oracle 11G</li>
-                                        <li>Confección de reportes de negocio en SQL y PLSQL</li>
+                                        <li>User requirements analysis</li>
+                                        <li>Training, coordination and team supervision</li>
+                                        <li>Java EE application developer</li>
+                                        <li>QA support</li>
+                                        <li>24x7 production support for software and infrastructure</li>
+                                        <li>Technologies utilized: Java EE, Apache Struts, Grails, Hibernate</li>
+                                        <li>Platforms utilized: Oracle Weblogic Server 9.x, Unix</li>
+                                        <li>Complementary technologies: IBM MQ Series, JMS, Python scripts</li>
+                                        <li>Database: Oracle 11G</li>
+                                        <li>Business report compilation with SQL and PLSQL</li>
                                     </ul>
                                 </span>
                             </div>                        
@@ -206,14 +222,14 @@
                                 <span class="BodyTime">2008-10 - 2011-06</span>
                             </div>
                             <div class="ExperienceBody">
-                                <span class="BodySubtitle">Desarrollador Java</span>
-                                <span class="BodyPlace">Cúbika S.A. (ahora Globallogic)</span>
+                                <span class="BodySubtitle">Java Developer</span>
+                                <span class="BodyPlace">Cúbika S.A. (now Globallogic)</span>
                                 <span>
                                     <ul class="List">
-                                        <li>Desarrollo de aplicaciones Java EE</li>
-                                        <li>Desarrollo de scripts PLSQL</li>
-                                        <li>Soporte a QA</li>
-                                        <li>Soporte a producción</li>
+                                        <li>Java EE application development</li>
+                                        <li>PLSQL script development</li>
+                                        <li>QA support</li>
+                                        <li>Production support</li>
                                     </ul>
                                 </span>
                             </div>                        
@@ -223,31 +239,31 @@
                                 <span class="BodyTime">2006-12 - 2008-09</span>
                             </div>
                             <div class="ExperienceBody">
-                                <span class="BodySubtitle">Tester QA</span>
+                                <span class="BodySubtitle">QA Tester</span>
                                 <span class="BodyPlace">IBM Argentina S.A.</span>
                                 <span>
                                     <ul class="List">
-                                        <li>Generación de casos de uso</li>
-                                        <li>Testing de aplicaciones Java</li>
+                                        <li>Use case generation</li>
+                                        <li>Java application testing</li>
                                     </ul>
                                 </span>
                             </div>                        
                         </div>
                     </div>
                     <div class="Experience">
-                        <div class="BodyTitle">Educación</div>
+                        <div class="BodyTitle">Education</div>
                         <hr class="Line" />
                         <div class="ExperienceItem">
                             <div class="ExperienceTime">
-                                <span class="BodyTime">2013-07 - presente</span>
+                                <span class="BodyTime">2013-07 - present</span>
                             </div>
                             <div class="ExperienceBody">
-                                <span class="BodySubtitle">Ingeniero en sistemas de información</span>
+                                <span class="BodySubtitle">System Engineer</span>
                                 <span class="BodyPlace">Universidad Tecnológica Nacional, Facultad Regional Buenos Aires</span>
                                 <span>
                                     <ul class="List">
-                                        <li>35 materias aprobadas</li>
-                                        <li>5 materias para graduarme</li>
+                                        <li>35 credits passed</li>
+                                        <li>5 credits remaining</li>
                                     </ul>
                                 </span>
                             </div>                        
@@ -257,13 +273,13 @@
                                 <span class="BodyTime">2000 - 2005</span>
                             </div>
                             <div class="ExperienceBody">
-                                <span class="BodySubtitle">Técnico en informática personal y profesional</span>
+                                <span class="BodySubtitle">IT Technician</span>
                                 <span class="BodyPlace">Escuela nacional de educación técnica N°6 "Chacabuco". Morón, Buenos Aires</span>
                             </div>                        
                         </div>
                     </div>
                     <div class="Experience">
-                        <div class="BodyTitle">Tecnologías y herramientas</div>
+                        <div class="BodyTitle">Tools and Technologies</div>
                         <hr class="Line" />
                         <div class="ExperienceItem">
                             <div class="ExperienceTime" ></div>
@@ -295,42 +311,42 @@
                                     <b>Unity</b>
                                 </span>
                                 <span class="SkillItem">
-                                    <span><b>Conocimiento básico</b></span>
+                                    <span><b>Basic knowledge</b></span>
                                     <span class="SkillDescription">C#,PHP, Python</span>
                                 </span>
                                 <span class="SkillItem">
-                                    <span><b>Otros software utilizados</b></span>
+                                    <span><b>Additional software utilized</b></span>
                                     <span class="SkillDescription">JIRA, SoapUI, Postman</span>
                                 </span>
                                 <span class="SkillItem">
-                                    <span><b>IDE's utilizados</b></span>
+                                    <span><b>Utilized IDEs</b></span>
                                     <span class="SkillDescription">Eclipse, Visual Studio Code, IntelliJ IDEA</span>
                                 </span>
                             </div>                        
                         </div>
                     </div>
                     <div class="Experience">
-                        <div class="BodyTitle">Idiomas</div>
+                        <div class="BodyTitle">Languages</div>
                         <hr class="Line" />
                         <div class="ExperienceItem">
                             <div class="ExperienceTime">
                             </div>
                             <div class="ExperienceBody">
-                                <span class="BodySubtitle">Inglés</span>
-                                <span class="BodyPlace">Nivel fluido hablado y escrito</span>
+                                <span class="BodySubtitle">English</span>
+                                <span class="BodyPlace">Bilingual proficiency</span>
                             </div>                        
                         </div>
                         <div class="ExperienceItem">
                             <div class="ExperienceTime">
                             </div>
                             <div class="ExperienceBody">
-                                <span class="BodySubtitle">Chino</span>
-                                <span class="BodyPlace">Nivel básico hablado y escrito</span>
+                                <span class="BodySubtitle">Chinese</span>
+                                <span class="BodyPlace">Basic level</span>
                             </div>                        
                         </div>
                     </div>
                     <div class="Experience">
-                        <div class="BodyTitle">Cursos</div>
+                        <div class="BodyTitle">Courses</div>
                         <hr class="Line" />
                         <div class="ExperienceItem">
                             <div class="ExperienceTime">
