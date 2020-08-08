@@ -9,6 +9,7 @@ import Screenshot3 from '../assets/images/spaceship/screenshot3.png';
 import Screenshot4 from '../assets/images/spaceship/screenshot4.png';
 import Screenshot5 from '../assets/images/spaceship/screenshot5.png';
 import Screenshot6 from '../assets/images/spaceship/screenshot6.png';
+import Screenshot7 from '../assets/images/spaceship/screenshot7.png';
 import ControllerSection from './ControllerSection.js.js';
 import DownloadLogo from './DownloadLogo'
 import Rhombus from '../components/Rhombus'
@@ -18,7 +19,7 @@ const Spaceship = ({ t }) => {
     return (
         <div className={MainModule.Main + ' ' + MainModule.MainSpaceship}>
             <Rhombus spaceship home/>
-            <div className={MainModule.Content}>
+            <div className={MainModule.SpaceshipContent}>
                 <div className={MainModule.LogoSection}>
                     <img className={MainModule.SpaceshipLogo} src={SpaceshipLogo} alt={"spaceshipLogo"} />
                 </div>
@@ -27,6 +28,8 @@ const Spaceship = ({ t }) => {
                 <SpaceshipSection titleSection={t('spaceship.section3.title')} descriptionSection={t('spaceship.section3')} />
                 <SpaceshipSection smallImg imgs={[Screenshot1, Screenshot2]} />
                 <SpaceshipSection titleSection={t('spaceship.section4.title')} descriptionSection={t('spaceship.section4')} />
+                <SpaceshipSection titleSection={t('spaceship.section45.title')} 
+                    descriptionSection={t('spaceship.section45')} smallImg imgs={[Screenshot7]}/>
                 <SpaceshipSection titleSection={t('spaceship.section5.title')} descriptionSection={t('spaceship.section5')} />
                 <SpaceshipSection smallImg imgs={[Screenshot3]} />
                 <SpaceshipSection titleSection={t('spaceship.section6.title')} descriptionSection={t('spaceship.section6')}

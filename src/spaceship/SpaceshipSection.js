@@ -2,17 +2,22 @@ import React from 'react';
 import MainModule from '../main.module.css';
 
 const SpaceshipSection = (props) => {
+
+    const openImg = (elem) => {
+        window.open(elem);
+    }
+
     const getImgs = (props) => {
         return props.imgs.map((elem, index) => {
             if (props.smallImg) {
                 return (
                     <img className={MainModule.spaceshipScreenshot} key={'img' + index}
-                    src={elem} alt={'screenshot' + index}/>
+                    src={elem} alt={'screenshot' + index} onClick={() => openImg(elem)}/>
                 );
             } else {
                 return (
                     <img className={MainModule.spaceshipArchImg} key={'img' + index} 
-                        src={elem} alt={'img' + index}/>
+                        src={elem} alt={'img' + index} />
                 );
             }
         })
@@ -26,6 +31,16 @@ const SpaceshipSection = (props) => {
             return '';
         }   
     }
+
+    const getDescription = (props) => {
+    
+        if (typeof(props.descriptionSection) !== 'undefined') {
+            return (    <div className={MainModule.spaceshipText}>{props.descriptionSection}</div>);
+        } else {
+            return '';
+        }   
+    }
+
     
     const getList = (props) => {
         if (typeof(props.items) !== 'undefined') {
@@ -56,9 +71,11 @@ const SpaceshipSection = (props) => {
     } else {
         let imgs = getImgs(props);
         let title = getTitle(props);
+        let description = getDescription(props);
         return (
             <section className={MainModule.spaceshipSection}>
                 {title}
+                {description}
                 <div className={MainModule.screenshotFloat}>
                     {imgs}
                 </div>
