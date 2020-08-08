@@ -1,9 +1,11 @@
 import React from 'react';
 import Css from './cv.module.css'
+import Rhombus from '../components/Rhombus'
 
 const Cv = ({t}) => {
     return  (
     <div className={Css.Main}>
+        <Rhombus home/>
         <div className={Css.Cv}>
             <div className={Css.Header}>
                 <div className={Css.HeaderTitle}>Alejandro Daniel Barreto</div>
