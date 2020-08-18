@@ -1,4 +1,8 @@
-@import url(http://db.onlinewebfonts.com/c/554db1ae89696fec03fd5b95a1cebdee?family=EnduranceW01-Regular);
+
+@font-face {
+    font-family: EnduranceW01-Regular;
+    src: url('../assets/font/endurance/554db1ae89696fec03fd5b95a1cebdee.woff');
+}
 
 :root {
     --lateral-margins: 50px;
@@ -9,7 +13,12 @@
     justify-content: center;
     background-color: black;
     font-family: EnduranceW01-Regular, Cambria;
-    margin-bottom: 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.MainBody {
+    margin : 0px;
+    background-color: black;
 }
 .Cv {
     width: 1000px;
@@ -40,6 +49,7 @@
     font-size: 39px;
     color: white;
     width: 100%;
+    position: relative;
 }
 .Subtitle {
     font-size: 25px;
@@ -127,4 +137,30 @@
 }
 .SkillDescription {
     width: 100%;
+}
+
+/*Download box*/
+.DownloadBox {
+    position: absolute;
+    right: 10px;
+    top : -10px
+}
+.DownloadTitle {
+    width: 100%;
+    text-align: center;
+    font-size: 0.75vw;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+.ListRow {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.Icon {
+    width: 2.5vw;
+    height: 2.5vw;
+    margin-left: 10px;
+    cursor: pointer;
 }

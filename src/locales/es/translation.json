@@ -19,9 +19,9 @@
     "spaceship.section6.item3" : "Sombreado de la textura de la nave",
     "spaceship.section6.item4" : "Sombras de todas las naves y los misiles disparados proyectadas en la superficie de la Death Star",
     "spaceship.section6.item5" : "Oscurecimiento de la pantalla al presionar el botón de pausa",
-    "spaceship.section6.item6" : "Oscurecimiento total de la nave cuando se pierde el juego",
+    "spaceship.section6.item6" : "Oscurecimiento de la nave cuando perdés el juego",
     "spaceship.section7.title" : "La estrategia",
-    "spaceship.section7" : "El objetivo del juego es llegar hasta el otro lado de la Death Star, y disparar el misil especial en el ducto. Hay básicamente dos estrategias para lograrlo, volar bajo por el túnel esquivando torretas, lo cual hará que las naves no te localicen, o volar alto fuera del alcance de las torretas, pero enfrentandose a las varias naves que te persiguen. Cualquier estrategia elegida necesitará volar rápido intentando no hacerlo en linea recta, ya que de esa manera los misiles te alcanzarían.",
+    "spaceship.section7" : "El objetivo del juego es lograr llegar hasta el otro lado de la Death Star y disparar el misil especial en el ducto. Hay básicamente dos estrategias para lograrlo. Volar bajo por el túnel esquivando torretas, lo cual hará que las naves no te localicen, o volar alto lejos de ellas, pero enfrentandote a las varias naves que te persiguen.",
     "spaceship.section8.title" : "Los controles",
     "spaceship.section8.item1" : "Controles del juego",
     "spaceship.section8.item2" : "Controles de debug",
@@ -41,7 +41,7 @@
     "spaceship.section8.item2.item4" : "C: Super desaceleración",
     "spaceship.section8.item2.item5" : "IDDQD: Modo dios",
     "spaceship.section9.title" : "La inteligencia de los enemigos",
-    "spaceship.section9" : "Los naves enemigas te perseguirán si estas en su radio de visibilidad, dentro de una distancia máxima, y por sobre el túnel de las torretas. Cuando te persigan te dispararán automáticamente. En caso de que no estés en su radio de visibilidad, irán en linea recta vagando por el espacio hasta que te cruces en su camino. Si logras dispararles y neutralizarlas, no te perseguirán ni dispararán, aunque esto es muy difícil. Casi imposible ya que se mueven muy rápido. Por otro lado las torretas son inmóviles, aunque mas abundantes en número. Puedes neutralizarlas mas fácil. Te dejarán de disparar, aunque encontrarás algunas que serán invencibles. Por último, el enemigo mas estático son las paredes y obstáculos bloqueando el camino. Debes esquivarlos ya que estos también te disminuirán energía.",
+    "spaceship.section9" : "Los naves enemigas te perseguirán si estás en su ángulo de visibilidad, dentro de una distancia máxima, y por sobre el túnel de las torretas. En caso de que no estés en su ángulo, irán en linea recta vagando por el espacio hasta que te cruces en su camino. Las torretas son inmóviles, aunque mas abundantes en número. Solo dispararán cuando te encuentres dentro de una distancia, no tienen limitado el ángulo de visibilidad. Por último, el enemigo mas estático, pero implacable son las paredes y obstáculos bloqueando el camino. Debes esquivarlos ya que estos también te quitarán vida.",
 
     "workInProgress.title" : "Sección en construcción",
 
