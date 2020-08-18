@@ -11,7 +11,11 @@ export default class DownloadLogo extends Component {
     }
 
     openGithubLink() {
-        window.open("https://github.com/Bade99/2019_1C_3051_Padawans");
+        window.open("https://github.com/Bade99/2019_1C_3051_Padawans", '_blank');
+    }
+
+    downloadProject() {
+        window.open("downloads/NET_4.7.2_Framework.zip", '_blank');
     }
 
     render() {
