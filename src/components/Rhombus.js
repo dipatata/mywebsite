@@ -80,7 +80,7 @@ export default class Rhombus extends Component {
         if (this.state.onProcess || this.state.runningRhombusShrink) return;
         if (!this.state.headerStatus) {
             this.rhombusAnimate();
-            setTimeout(this.animateRhombusParent.bind(this), 600);
+            setTimeout(this.animateRhombusParent.bind(this), 300);
         } else {
             this.animateRhombusParent();
         }
