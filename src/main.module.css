@@ -22,6 +22,7 @@ body{
     display: flex;
     justify-content: center;
     position: relative;
+    background-color: rgb(221, 221, 221);
 }
 .Header {
     width: 100%;
@@ -142,7 +143,7 @@ body{
     height: 85px;
     background-size: cover;
     image-rendering: crisp-edges;
-    animation-duration: 0.7s;
+    animation-duration: 0.3s;
     animation-name: shrink-scrolling;
     animation-play-state: paused;
     animation-iteration-count: infinite;
@@ -323,4 +324,16 @@ Work in progress
     align-items: center;
     padding: 10px;
     outline: yellowgreen solid 1px;
+}
+.WorkInProgressContent {
+    background-color: black;
+}
+.MainWorkInProgress {
+    margin: 0px 30px 30px 30px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: black;
+    height: 100vh;
 }

@@ -7,7 +7,7 @@ import {withNamespaces} from 'react-i18next';
 
 const WorkInprogress = () => {
     return (
-        <div className={MainModule.Main + ' ' + MainModule.MainSpaceship}>
+        <div className={MainModule.MainWorkInProgress + ' ' + MainModule.MainSpaceship}>
             <Rhombus spaceship home/>
             <div className={MainModule.WorkInProgressContent}>
                 <div className={MainModule.WorkInProgressBox}>
