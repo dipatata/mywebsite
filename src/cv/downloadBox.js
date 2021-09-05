@@ -7,17 +7,17 @@ const DownloadBox = (props) => {
 
     const loadPdf = () => {
         if (props.lng === 'es') {
-            window.open('downloads/cvEsp.pdf', "_blank");
+            window.open('download/cvEsp.pdf', "_blank");
         } else {
-            window.open('downloads/cvEng.pdf', "_blank");
+            window.open('download/cvEng.pdf', "_blank");
         }
     }
 
     const loadHtml = () => {
         if (props.lng === 'es') {
-            window.open('downloads/cvEsp.html', "_blank");
+            window.open('download/cvEsp.html', "_blank");
         } else {
-            window.open('downloads/cvEng.html', "_blank");
+            window.open('download/cvEng.html', "_blank");
         }
     }
 

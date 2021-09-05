@@ -47,11 +47,24 @@ export default class Rhombus extends Component {
             <div className={MainModule.nav}>
                 <div id={this.menuId} className={MainModule.navMenu}>
                     {homeItem}
-                    <div className={MainModule.menuItem}>cv</div>
-                    <div className={MainModule.menuItem}>c#</div>
-                    <div className={MainModule.menuItem}>blog</div>
-                    <div className={MainModule.menuItem}>angular</div>
-                    <div className={MainModule.menuItem}>java</div>
+                    <AppLink linkTo="spaceship" linkInterno>
+                        <div className={MainModule.menuItem}>c#</div>
+                    </AppLink>
+                    <AppLink linkTo="java" linkInterno>
+                        <div className={MainModule.menuItem}>java</div>
+                    </AppLink>
+                    <AppLink linkTo="blog" linkInterno>
+                        <div className={MainModule.menuItem}>blog</div>
+                    </AppLink>
+                    <AppLink linkTo="reactDomino">
+                        <div className={MainModule.menuItem}>react</div>
+                    </AppLink>
+                    <AppLink linkTo="angularSudoku/sudoku.html">
+                        <div className={MainModule.menuItem}>angular</div>
+                    </AppLink>
+                    <AppLink linkTo="cv" linkInterno>
+                        <div className={MainModule.menuItemLong}>cv/contact</div>
+                    </AppLink>
                 </div>
                 <div id={this.rhombusImageParentId} className={MainModule.rhombusParent}>
                     <img id={this.rhombusImageId} src={this.getImageSrc()} alt={this.rhombusImageId}

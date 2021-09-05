@@ -1,11 +1,18 @@
 import React from 'react';
-import Css from './cv.module.css'
+import CssNoMobile from './cv.module.css'
+import CssMobile from './cvMobile.module.css'
 import Rhombus from '../components/Rhombus'
 import DownloadBox from './downloadBox';
 
-const Cv = ({t, lng}) => {
+const Cv = (props) => {
+    let t = props.t;
+    let lng = props.lng;
+    let Css = CssNoMobile;
+    if (props.isMobile) {
+        Css = CssMobile;
+    }
     return  (
-    <body className={Css.MainBody}>
+    <div className={Css.MainBody}>
         <div className={Css.Main}>
             <Rhombus home/>
             <div className={Css.Cv}>
@@ -269,7 +276,7 @@ const Cv = ({t, lng}) => {
                 </div>
             </div>
         </div>
-    </body>
+    </div>
     );
 }
 
